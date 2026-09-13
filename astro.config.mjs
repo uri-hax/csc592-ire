@@ -20,8 +20,7 @@ export default defineConfig({
 				{
 					label: 'Resources',
 					items: [
-						{ label: 'GitHub', link: 'https://github.com/orgs/csc505-f25/discussions' },
-						{ label: 'Gradescope', link: 'https://www.gradescope.com/' },
+						{ label: 'GitHub', link: 'https://github.com/uri-hax/csc592-ire-f26/discussions' },
 					],
 				}
 			],
