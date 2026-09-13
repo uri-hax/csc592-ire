@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://hax-lab.github.io',
-  	base: '/csc592-web',
+  	base: '/csc592-ire',
 	integrations: [
 		starlight({
 			title: 'CSC592-IRE',
