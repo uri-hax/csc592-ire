@@ -6,7 +6,8 @@ description: Pick an idea and a group! :)
 import {dates} from '../../components/duedates.astro';
 
 ##### Out: {dates.research_assignment_out}
-##### Due: {dates.research_assignment_out}
+##### Preliminary Presentation: {dates.research_assignment_prelim_pres}
+##### Due: {dates.research_assignment_due}
 
 :::caution[Work-In-Progress]
 This is not complete, and is subject to change. I am posting it early to help you get ideas. :)
@@ -23,5 +24,142 @@ You will form into groups for 2-3 possible mini group research assignments, each
 **You will select one of the three research ideas:**
 
 * **Oral History of CS** -> mimic the oral history traditions of ancient Greece, by finding and extracting an oral history of Computer Science.
-* **Retrieve-IT: Tabular Data Augmentation from Social Media** -> Develop and test an automated version of Retrieve-IT for Social Media extraction to augment an existing Tabular Dataset.
+* **Retrieve-IT: Tabular Data Augmentation from Social Media** (aka build-a-dataset) -> Develop and test an automated version of Retrieve-IT for Social Media extraction to augment an existing Tabular Dataset.
 * **Word Difficulty Text Pipeline on Everyday Text**: Identify Difficult Words in Everyday vs Machine Text. Extract these words and run analyses. Is there a difference in human vs machine generated text?
+
+### Pick your Idea! (In-Class)
+
+Please do ranked choice voting to select your preferences [in this shared Google Sheets.](https://docs.google.com/spreadsheets/d/1Ttpuo63CfhaPwS5x8pMn-4KgV0N04Dcf_bSxTZj9xMg/edit?gid=1432197092#gid=1432197092).
+
+### AI Tools (Jev)
+
+Each of these three research ideas involves retrieving appropriate web pages and then extracting information. For the extraction part, we will use newer systems to automate this process, here are some examples:
+
+* `open jev`: https://openjev.com/
+* `jev-ultrafast`: https://github.com/browser-use/jev-ultrafast
+* optional info video (sorry it is AI voice) - but it includes some good examples: http://youtube.com/watch?v=NFKHLhAvj1g
+
+In their words, it uses SEMIF, sematic ifs from open models. What's really cool, it runs locally in your browser, and is highly interactive. TypeSafe AI’s Jev is a `System One` model that returns typed decisions and calibrated probabilities rather than text, making it ideal for structured extraction tasks
+
+:::caution[Why JEV?]
+JEV is a newer model (from TypeSafe AI), that balances speed vs cost ($) trade-offs. Most importantly, it provides users agency over their actions and costs. Shaun believes that as the costs on larger AI models grow (along with their complexity in terms of UX/DX) that using models like Jev locally will be more attractive in everyday scenarios. There is a long history of people generally picking the convenient option.
+:::
+
+
+## Main Overview
+
+There are three main projects you could be on. Each one at a different stage of the research process. This should help you get experience at what it is like to work on each part.
+
+* **Oral History of CS** -> a brand new idea 
+* **Retrieve-IT: Tabular Data Augmentation from Social Media** -> improving an existing paper
+* **Word Difficulty Text Pipeline on Everyday Text** -> sequel to a current paper
+
+### First Steps and What Artifact (code/dataset) Will You Produce?
+
+#### Artifact for Oral History of CS
+
+Mirroring the ancient Greeks, you will create an oral history of Computer Science by extracting information from the World Wide Web: [WayBackMachine](https://web.archive.org/) (faculty websites, articles, etc.), Reddit, papers, videos, etc.
+
+:::tip[Artifact]
+Create an oral history of Computer Science using a metadata markup language [MEDFORD](https://github.com/TuftsBCB/medford) to annotate and add metadata per source.
+> **Possible Stretch Goal** create a static HTML page with some preliminary results (consider using automated thematic coding) and observations.
+:::
+
+#### Artifact for Retrieve-IT: Tabular Data Augmentation from Social Media
+
+Email Shaun as a group for the latest submission and reviews, and the current repo (ask Shaun for access w/github username):
+https://github.com/uri-hax/build-a-dataset
+
+:::tip[Artifact]
+Create an automated version of the human-centric retrieval and extraction methods described in the paper.
+> **Possible Stretch Goal** run metrics to evaluate the automated method vs the human-method from the paper.
+:::
+
+#### Word Difficulty Text Pipeline on Everyday Text
+
+Read the paper that will be published this Fall:
+https://shaunwallace.org/files/ASSETS_26__BreakingWordBarriers.pdf
+
+:::tip[Artifact]
+Create a chrome extension that can retrieve and extract the seven word-level features from Wikipedia articles and/or Chat-GPT conversationl interfaces.
+> **Possible Stretch Goal** actually replace the text with synonyms or similar phrases. ;)
+:::
+
+### Short Group Presentations (1 week in & final due date)
+
+These will act as short group presentations to discuss/reflect on what is going on. No slides necessary. Everyone should speak at least once. :)
+
+#### Preliminary Presentation (1 week in) [6 minutes]
+
+Think of your goal for this research project. Whether that includes parts of prototyping a system, creating interactive interfaces, visualizing data, gathering user needs and translating them into designs, finalizing an existing system, and/or evaluating your system with a pilot user study or comparing against perforance benchmarks.
+
+Now you have that scope of work in mind, answer these questions (mentioned above) during the presentation:
+
+```
+    % What you want to do/create (and/or) update on your progress
+    % Why you want to do it
+    % How you plan to do over the next week
+    % How will you know if you succeed
+    % What are the benefits if the project is successful
+```
+
+> If you want add/change goals this is the stage to do it! ;)
+
+### Final Presentation (final due date)
+
+This milestone is short, and meant to simulate the semester project. 
+
+```
+    % What did you do/create? (focus on the artifact)
+    % What went well (and why)
+    % What went poorly (and why)
+    % What would you do differently next time
+```
+
+### Paper (this is short!)
+
+This mirrors your short final presentation. 
+
+```
+    % What did you do/create? (focus on the artifact)
+    % What went well (and why)
+    % What went poorly (and why)
+    % What would you do differently next time
+    % What are some next steps?
+```
+
+Ensure there is a focus on JEV Browser Agents in your workflow and the artifact you produced.
+
+:::caution[No AI Tools for Writing]
+Make this in your own words! As someone who reads a lot of writing, it is becoming easier to see when thoughts/text are AI-generated. It also becomes bland to read. Imagine listening to the same song all of the time. Seeing someone's unique personality and thoughts in their writings really helps them stand apart. :)
+:::
+
+
+
+## Handin to your GROUP'S Class Google Drive Folder
+
+| Filename | Description |
+| - | - |
+| link to the github repo containing the (code/dataset) for the artifact |
+| slides.pdf | Your presentation slides (email Shaun early!) |
+| proposal.md or proposal.tex | Your written paper |
+| reflection.md | A short 3-5 sentence reflection of the assignment |
+| genai_prompts.md | Share your prompts used with genAI. It is okay to share the link. |
+
+The reflection could contain worries, fears, concerns about achieving your research idea.
+If you used no genAI please still submit something, you can just put `did not use` in the text for `genai_prompts.md`.
+
+** Email Shaun that you are done with the subject line: `CSC592 - Hand-In - (R)esearch Group Assignment`
+> This acts as your hand-in for late hours purposes. If you update something after the fact, email Shaun please. :)
+
+#### Grade Allocation
+
+| Assessment | Points |
+| - | - |
+| short preliminary group presentation (in-class) | 10 |
+| short final group presentation (in-class) | 10 |
+| artifact (code/dataset) | 20 |
+| paper (paper.md or paper.tex) | 50 |
+| reflection.md | 5 |
+| genai_prompts.md | 5 |
+| Total | 100 |
